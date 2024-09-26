@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Callback function to be executed after a delay
   function delayedCallback() {
+    message.textContent = "Callback executed after 5 seconds"; // Update message
+
     // Fetch data from the JSONPlaceholder API
     fetch("https://dummyjson.com/posts")
       .then((response) => response.json()) // Convert response to JSON
